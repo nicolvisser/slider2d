@@ -1,10 +1,6 @@
 
 # slider2d
 
-[![Build Status](https://travis-ci.org//slider2d.svg?branch=master)](https://travis-ci.org//slider2d)
-[![codecov](https://codecov.io/gh//slider2d/branch/master/graph/badge.svg)](https://codecov.io/gh//slider2d)
-
-
 A custom 2D slider widget for Jupyter
 
 ## Installation

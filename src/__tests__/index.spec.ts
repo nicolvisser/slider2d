@@ -13,14 +13,14 @@ describe('Slider2D', () => {
     it('should be createable', () => {
       const model = createTestModel(Slider2DModel);
       expect(model).toBeInstanceOf(Slider2DModel);
-      expect(model.get('value')).toEqual('Hello World');
+      expect(model.get('value')).toEqual([0, 0]);
     });
 
     it('should be createable with a value', () => {
-      const state = { value: 'Foo Bar!' };
+      const state = { value: [0.5, 0.5] };
       const model = createTestModel(Slider2DModel, state);
       expect(model).toBeInstanceOf(Slider2DModel);
-      expect(model.get('value')).toEqual('Foo Bar!');
+      expect(model.get('value')).toEqual([0.5, 0.5]);
     });
   });
 });
