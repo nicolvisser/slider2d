@@ -6,9 +6,13 @@
 
 import pytest
 
-from ..example import ExampleWidget
+from ..slider2d import Slider2D
 
 
 def test_example_creation_blank():
-    w = ExampleWidget()
-    assert w.value == 'Hello World'
+    w = Slider2D()
+    assert w.value == [0., 0.]
+    assert w.xlim == [0., 1.]
+    assert w.ylim == [0., 1.]
+    assert w.width == 100
+    assert w.height == 100

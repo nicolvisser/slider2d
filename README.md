@@ -25,22 +25,22 @@ jupyter nbextension enable --py [--sys-prefix|--user|--system] slider2d
 
 Create a dev environment:
 ```bash
-conda create -n slider2d -c conda-forge nodejs yarn python jupyterlab
+conda create -n slider2d -c conda-forge nodejs yarn python=3.10 jupyterlab
 conda activate slider2d
 ```
 
 Install the python. This will also build the TS package.
 ```bash
 pip install -e ".[test, examples]"
+pip install jupyter_packaging
+yarn
 ```
 
 When developing your extensions, you need to manually enable your extensions with the
 notebook / lab frontend. For lab, this is done by the command:
 
 ```
-pip install jupyter_packaging
 jupyter labextension develop --overwrite .
-yarn
 yarn run build
 ```
 
